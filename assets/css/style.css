@@ -1,0 +1,101 @@
+:root{
+    --body-color: white;
+    --text-color: black;
+    --shadow-box : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: var(--body-color);
+}
+
+body.darkMode {
+    background: #151111;
+    transition: 0.35s ease;
+}
+.navLogo .white-logo{
+    display: none;
+}
+
+.darkMode .navLogo .red-logo{
+    display: none;
+}
+.darkMode .navLogo .white-logo{
+    display: block;
+}
+nav{
+    padding: 20px 0;
+    box-shadow: var(--shadow-box);
+}
+
+.darkMode nav{
+    box-shadow: rgba(196, 189, 189, 0.35) 0px 5px 15px;
+}
+
+nav .navMenu ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav .navMenu ul li a{
+    color: var(--text-color);
+    font-weight: 600;
+}
+.darkMode nav .navMenu ul li a{
+    color: white;
+}
+
+nav .changeModeBtn button{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 25px;
+}
+nav .changeModeBtn button span{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+nav .changeModeBtn button span.moonIcon{
+    background: #080b18;
+    color: rgb(221, 152, 14);
+    transition: 0.35s;
+}
+
+.darkMode nav .changeModeBtn button span.moonIcon{
+    margin-top: -100%;
+}
+
+nav .changeModeBtn button span.sunIcon{
+    background: whitesmoke;
+    color: rgb(221, 152, 14);
+}
+
+
+h1{
+    color: var(--text-color);
+}
+
+.darkMode h1{
+    color: white;
+}
+
+.mt-5 .text-center{
+  font-family:  'Lucida Grande';
+}
